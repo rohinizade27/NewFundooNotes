@@ -1,0 +1,567 @@
+/***************create-note*****************/
+
+#txtarea{
+    height: 41px;
+    width: 100%;
+    box-shadow: none;
+    border:none
+    }
+
+#txtbox{
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    margin-left: -2%;
+        border: none;
+    outline: none;
+    resize: none ;
+}
+.btn{
+    box-shadow: none;
+    background: transparent;
+    border: none;
+}
+
+#card-footer-btn{
+border-top: none;
+margin-left: -4%;
+background:transparent;
+
+}
+#close-btn{
+   float: right;
+    width: 16%;
+}
+
+
+/************ navigation-bar*******************/
+.navbar{
+    border-bottom: 1px solid #dadce0;
+}
+#menu-toggle{
+    background: transparent;
+    border: none;
+}
+#search_btn{
+    font-size: 23px;
+    border: none;
+    background: transparent;
+}
+
+#searchbox{
+border: 1px solid rgba(0,0,0,0);
+ background: rgba(0,0,0,0.04);
+ width: 44%;
+
+
+}
+#search-input-box{
+     box-shadow: none;
+    border: none;
+    background-color: rgba(234, 234, 234, 0.2);
+}
+
+#search_clear_btn{
+    background: transparent;
+    border: none;
+    font-size: 23px;
+}
+
+
+#setting_btn{
+    background: transparent;
+    border: none;
+    font-size: 23px;
+    margin-left: 26%;
+}
+
+#grid_list_btn{
+    background: transparent;
+    border: none;
+    font-size: 23px;
+    margin-left: 26%;
+}
+
+/*media queries for navigation bar*/
+@media (min-width: 992px) and (max-width: 1199px)
+
+{
+#search-input-box
+    {
+     width: 44%;
+     }
+.navbar
+ {
+   width:100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+   #search-input-box
+    {
+        width: 44%;
+    }
+    .navbar
+    {
+        width:100%;
+     }
+  #setting_btn
+  {
+    display:none;
+  }
+  #grid_list_btn
+  {
+    display:none;
+  }
+
+   .nav-item
+   {
+   display:none;
+  }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767px)
+{
+     #fundoo_img{
+       display:none;
+       }
+
+       .navbar {
+        width:100%;
+      }
+   #searchbox
+    {
+         width: 7%;
+         background:rgba(245, 240, 240, 0.04);
+    }
+   search-input-box{
+    display:none;
+  }
+
+  #setting_btn{
+    display:none;
+  }
+  #grid_list_btn{
+    display:none;
+  }
+.nav-item {
+   display:none;
+  }
+
+   #search_btn{
+     margin-left: 650%;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+     #fundoo_img{
+       display:none;
+       }
+
+    #search-input-box
+        {
+          display:none;
+
+        }
+        #searchbox
+       {
+         width: 7%;
+         background: rgba(245, 240, 240, 0.04);
+       }
+   #setting_btn{
+    display:none;
+  }
+  #grid_list_btn{
+    display:none;
+  }
+  .nav-item {
+   display:none;
+  }
+   #search_btn{
+  margin-left: -120%;
+  }
+
+
+
+
+}
+
+@media only screen and (max-width: 411px) {
+       #fundoo_img{
+       display:none;
+       }
+       #search-input-box {
+        display:none;
+
+        }
+
+        #searchbox
+        {
+             width: 7%;
+             background:rgba(245, 240, 240, 0.04);
+        }
+
+     #setting_btn{
+    display:none;
+  }
+  #grid_list_btn{
+    display:none;
+  }
+
+
+  .nav-item {
+   display:none;
+  }
+
+  .container-fluid{
+      width: 320px;
+  }
+
+   .nav-link{
+   margin-top: -104%;
+  }
+   #search_btn{
+      margin-left: -164%;
+
+  }
+
+
+}
+
+/*************************** side-bar *********************/
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  top: 51px;
+  left: 250px;
+  width: 250px;
+  background: white;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+  margin-top: 18px;
+}
+
+#wrapper.active {
+  padding-left: 0;
+}
+#wrapper {
+       /*padding-left: 10%;*/
+       display: flex;
+       width: 100%;
+       align-items: stretch;
+    }
+
+#wrapper.active #sidebar-wrapper {
+  left: 0;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 3%;
+    }
+
+
+}
+
+
+
+
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: -19px;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 33px;
+}
+
+.sidebar-nav li a {
+  color:#0a0909;;
+  display: block;
+  text-decoration: none;
+  padding-left: 60px;
+}
+
+.sidebar-nav li a span:before {
+  position: absolute;
+  left: 0;
+  color: #41484c;
+  text-align: center;
+  width: 20px;
+  line-height: 18px;
+  margin-top: -16px;
+  margin-left: -106px;
+}
+
+/*.sidebar-nav li a:hover,
+.sidebar-nav li.active {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}*/
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 15px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+   color: #0c0a0a;
+   margin-top: -77px;
+   margin-left: 5px;
+}
+
+b{
+font-size: 15px;
+}
+
+/************************ create-note-card*******************/
+
+
+#createnote{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 48%;
+    margin-top: 2%;
+    width: 79%;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+#create-note-box{
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 15%
+    display: block;
+    max-width: 48%;
+    margin-top: 2%;
+    width: 79%;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+#take-a-note{
+margin-top: -2%;
+color: #7f7878;
+}
+#checkbox
+{
+    font-size: 132%;
+
+     background: transparent;
+     border: none;
+}
+#brush
+{
+font-size: 132%;
+background: transparent;
+border: none;
+
+}
+
+#photos
+{
+ font-size: 132%;
+ background: transparent;
+ border: none;
+
+}
+
+#note-grid{
+   margin-left: 22%;
+    margin-right: 14%;
+}
+
+#show-note-box{
+        height:8%;
+   }
+
+#note-box{
+     height:19%;
+    }
+/*media queries for create-note card*/
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    #note-grid{
+             margin-left: 23%;
+            margin-right: 14%;
+    }
+
+  #createnote {
+
+    margin-left: 23%;
+    margin-right: auto;
+    max-height: 15% display: block;
+    max-width: 62%;
+    margin-top: 3%;
+    /* width: 115%; */
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    }
+
+    #create-note-box {
+    margin-left: 23%;
+    margin-right: auto;
+    max-height: 15% display: block;
+    max-width: 62%;
+    margin-top: 3%;
+    /* width: 115%; */
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    }
+
+
+    #sidebar-wrapper{
+     display:none;
+
+    }
+
+    .card-columns {
+
+    column-count: 2;
+    }
+
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767px)
+{
+  .card-columns {
+
+    column-count: 2;
+    }
+
+   #createnote {
+    margin-left: 14%;
+    margin-right: auto;
+    display: block;
+    max-width: 68%;
+    margin-top: 4%;
+    width: 91%;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    }
+
+    #create-note-box {
+    margin-left:  14%;;
+    margin-right: auto;
+    max-height: 15% display: block;
+    max-width: 68%;
+    margin-top: 4%;
+    /* width: 115%; */
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    }
+
+     #sidebar-wrapper{
+     display:none;
+
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px)
+ {
+   #createnote {
+   margin-left: 6%;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    margin-top: 5%;
+    width: 82%;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    }
+
+
+
+
+    #create-note-box {
+    margin-left:  6%;;
+    margin-right: auto;
+    max-height: 15% display: block;
+    max-width: 100%;
+    margin-top: 5%;
+    width: 82%;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    }
+
+     #sidebar-wrapper{
+     display:none;
+
+    }
+
+   #sidebar-wrapper{
+     display:none;
+
+    }
+     #show-note-box{
+        height:4%;
+    }
+    #note-box{
+     height:12%;
+    }
+
+
+}
+
+@media only screen and (max-width: 420px) {
+ #sidebar-wrapper{
+     display:none;
+
+    }
+
+
+    #createnote {
+     margin-left: -14%;
+    margin-right: auto;
+    display: block;
+    max-width: 122%;
+    margin-top: 15%;
+    width: 120%;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    }
+
+
+    #create-note-box {
+    margin-left: -19%;
+    margin-right: auto;
+    max-height: 122% display: block;
+    max-width: 128%;
+    margin-top: 15%;
+    width: 160%;
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+
+    }
+    #show-note-box{
+        height:3%;
+    }
+
+    #note-box{
+     height:9%;
+    }
+
+
+
+}
