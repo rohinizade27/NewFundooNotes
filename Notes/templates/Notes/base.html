@@ -17,9 +17,15 @@
     <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
 
       <!--external css file -->
-      <link rel="stylesheet" type="text/css" href="{% static 'CSS/Navigation_Bar.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'CSS/note.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'CSS/date-time-picker.css' %}">
+      <script type="text/javascript" src="{% static 'JS/date-time-picker.js' %}"></script>
        <script type="text/javascript" src="{% static 'JS/base.js' %}"></script>
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
+
+
+
     <title>fandooNotes</title>
   </head>
   <body>
@@ -107,9 +113,7 @@
                         <div id="sidebar-wrapper">
                             <ul class="sidebar-nav">
                                 <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  class="gb_Uc" style="margin-bottom: -88px;margin-top: -10px;">
-                                        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 0 1 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z" ></path>
-                                    </svg>
+
                                     <a href="#"> <span><b>Notes</b></span></a>
                                 </li>
                                 <li>
@@ -184,6 +188,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--date-time-->
+    <script src="https://rawgit.com/creativetimofficial/material-kit/master/assets/js/plugins/moment.min.js"></script>
+    <script src="https://rawgit.com/creativetimofficial/material-kit/master/assets/js/plugins/bootstrap-datetimepicker.js"></script>
 
   </body>
 </html>
