@@ -426,12 +426,17 @@ border: none;
     margin-right: 14%;
 }
 
+#pined_note-grid{
+margin-left: 22%;
+margin-right: 14%;
+}
+
 #show-note-box{
        height: 5%;
    }
 
 #note-box{
-     height:12%;;
+         height: 12%;
     }
 /*media queries for create-note card*/
 
@@ -441,6 +446,11 @@ border: none;
    #note-grid {
     margin-left: 5%;
     margin-right: 10%;
+}
+
+#pined_note-grid{
+margin-left: 5%;
+margin-right: 10%;
 }
   #createnote {
 
@@ -487,7 +497,7 @@ border: none;
     }
 
     #note-box{
-     height:10%;
+        height: 12%;
     }
 
 }
@@ -539,6 +549,10 @@ border: none;
     margin-right: 10%;
 }
 
+#pined_note-grid{
+margin-left: 5%;
+margin-right: 10%;
+}
 
 
 }
@@ -550,7 +564,7 @@ border: none;
     margin-right: auto;
     display: block;
     max-width: 100%;
-    margin-top: 5%;
+    margin-top: 11%;
     width: 82%;
     box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
     }
@@ -585,7 +599,7 @@ border: none;
        }
 
      #show-note-box{
-    height:4%;
+    height:6%;
     }
     #note-box{
      height:12%;
@@ -614,6 +628,10 @@ border: none;
     margin-right: 1%;
    }
 
+#pined_note-grid{
+margin-left: -18%;
+margin-right: 10%;
+}
 
 
     #createnote {
@@ -621,7 +639,7 @@ border: none;
     margin-right: auto;
     display: block;
     max-width: 122%;
-    margin-top:19%;
+    margin-top:30%;
     width: 120%;
     box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
     }
@@ -638,12 +656,13 @@ border: none;
 
     }
     #show-note-box{
-        height:3%;
+            height: 5%;
     }
 
     #note-box{
      height:9%;
     }
+
 }
 /*******************card************************/
 .card.card-cascade .view.view-cascade {
@@ -798,3 +817,28 @@ border: none;
     height: 71px;
 
 }*/
+
+/******************************************************************/
+
+.trigger {
+  padding: 1px 10px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color:hsl(0, 0%, 70%);
+  color: #212121;
+  display: inline-block;
+  margin: 2px 5px;
+  border: 1px solid;
+   border-color: transparent!important;
+}
+
+.hoverable, .trigger {
+  transition: box-shadow 0.55s;
+  box-shadow: 0;
+}
+
+.hoverable:hover, .trigger:hover {
+  transition: box-shadow 0.45s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

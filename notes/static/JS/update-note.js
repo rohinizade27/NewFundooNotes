@@ -2,7 +2,7 @@
 
       $('#update-content').click(function () {
                 $('#modal-title').val($('#title').text());
-                $('#modal-description').val($('#description').text());
+                $('#modal-description').val($('#update-content').text());
 
                 // get the src of the image
                 var image_src = $("#note-img").attr('src');
@@ -13,10 +13,9 @@
             });
 
 
-
       $('#update-img').click(function () {
             $('#modal-title').val($('#title').text());
-            $('#modal-description').val($('#description').text());
+            $('#modal-description').val($('#update-content').text());
 
             // get the src of the image
             var image_src = $("#note-img").attr('src');
@@ -25,8 +24,6 @@
             $("#modal-img").attr('src',image_src);
 
         });
-
-
 
 
         });
