@@ -274,8 +274,8 @@
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdown-moreMenuButton">
             <a class="dropdown-item" href="{% url 'deleteenote' pk=note.id %}">Delete note</a>
-            <a class="dropdown-item" href="#">Add label</a>
-            <a class="dropdown-item" href="#">Make a copy</a>
+            <a class="dropdown-item" href="{% url 'copynote' pk=note.id %}">Make a copy</a>
+            <a class="dropdown-item" href="#">Add label </a>
          </div>
          </div>
         </div>
@@ -472,9 +472,9 @@
             <span><ion-icon name="more"></ion-icon></span>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdown-moreMenu-modal-Button">
-            <a class="dropdown-item" href="#">Delete note</a>
+            <a class="dropdown-item" href="">Delete note</a>
+            <a class="dropdown-item" href="">Make a copy</a>
             <a class="dropdown-item" href="#">Add label</a>
-            <a class="dropdown-item" href="#">Make a copy</a>
          </div>
          </div>
     </div>
